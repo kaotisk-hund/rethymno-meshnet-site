@@ -16,7 +16,7 @@
 ?>
 <html>
 	<head>
-		<title>rethymno meshnet</title>
+		<title>Rethymno MeshNet</title>
 		<style>
 			.logo {
 				text-align: center;
