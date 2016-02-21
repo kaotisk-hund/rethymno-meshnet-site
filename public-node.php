@@ -8,7 +8,3 @@ $public_node = "<pre>
             \"peerName\":\"your-name-goes-here\"
         }
 </pre>";
-
-
-
-?>
