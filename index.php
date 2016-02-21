@@ -21,7 +21,7 @@
 			.logo {
 				text-align: center;
 			}
-			.about {}
+			.content {}
 			.special {
 				background-color: rgba(255,40,40,0.3);
 			}
