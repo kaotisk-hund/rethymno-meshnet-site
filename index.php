@@ -12,7 +12,7 @@
 	$login = 'default-login';
 	$peer_name = 'your-name-goes-here';
 
-	echo var_dump($_GET);
+	var_dump($_GET);
 ?>
 <html>
 	<head>
