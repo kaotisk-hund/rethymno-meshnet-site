@@ -121,3 +121,15 @@ p.footer {
 	font-size: 70%;
 	text-align: right;
 }
+.lang-menu{
+	float: right;
+	background-color: #353535;
+	margin: 0;
+	padding: 0;
+}
+.lang-button{
+	text-decoration: none;
+	background-color: transparent;
+	margin: 0;
+	
+}

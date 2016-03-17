@@ -1,6 +1,19 @@
 <?php
-	$default_lang = "en";
-	$lang = $default_lang;
+	include '../app/Node.php';
+	include '../app/Language.php';
+	include '../app/Session.php';
+
+	$session = new Session();
+	
+	$language = new Language();
+	$language->set_language($session->get_language());
+	$lang = $language->get_language();
+
+	$node = new Node();
+	$public_node = $node->connect();
+
+
+	
 	/*if(isset($_GET['lang']) && )){
 		$lang = $_GET['lang'];
 	}
@@ -35,27 +48,7 @@ Here you can download cjdns for Windows.';
 	
 	$location["en"] = 'Rethymno, Greece';
 	$location["gr"] = 'Ρέθυμνο, Ελλάδα';
-class Node {
-	private $node_ipv6 = 'fc47:fa91:dfc5:d6a4:c428:be6b:d16:bdef';
-	private $domain = 'rethymno-meshnet.tk';
-	private $cjdns_port = '38295';
-	private $public_key = 'wb3pt76psbt28mt9t2wzyudyh9zkqwq9z3jqb3t06y53g6f5qzh0.k';
-	private $password = 'wgs9k7n7j5yh0kx7kyl5m7cpp71ls4y';
-	private $login = 'default-login';
-	private $peer_name = 'gr-rethymno-meshnet';
 
-	function connect(){
-		$out =
-		"\"".$this->domain.":".$this->cjdns_port."\": {
-\t\"login\": \"".$this->login."\",
-\t\"password\":\"".$this->password."\",
-\t\"publicKey\":\"".$this->public_key."\",
-\t\"peerName\":\"".$this->peer_name."\",
-\t\"contact\":\"kaotisk@irc.fc00.io\"
-	}";
-		return $out;
-	}
-}
 	$remote_address["en"] =  "you are accessing this site through: " .$_SERVER["REMOTE_ADDR"];
 	$remote_address["gr"] =  "Πρόσβαση στο site από: " .$_SERVER["REMOTE_ADDR"];
 
@@ -136,11 +129,16 @@ class Node {
 	    <link rel="stylesheet" type="text/css" href="css/custom.css" />
 	</head>
 	<body>
+		<div class="lang-menu">
+			<form method="post">
+			<input class="lang-button button" type="submit" name="language" value="en">
+			<input class="lang-button button" type="submit" name="language" value="gr">
+			</form>
+		</div>
 		<div class="row logo">
 			<div class="small-12 column">
 				<img src="img/meshnetlogo-2.svg" height="12.5%" width="12.5%">
-
-			<h1><?php echo $title[$lang]; ?></h1>
+				<h1><?php echo $title[$lang]; ?></h1>
 			</div>
 		</div>
 		<div class="row content">
@@ -178,8 +176,7 @@ class Node {
 			<div class="small-9 columns">
 				<div class="code">
 					<h2><?php echo $connect_title[$lang]; ?></h2>
-					<?php include "public-node.php";
-						echo $public_node; ?>
+					<pre><?php echo $public_node; ?></pre>
 				</div>
 			</div>
 			<div class="small-3 columns donate">
@@ -195,7 +192,6 @@ class Node {
 				<p class="footer">Proudly brought to you by <a href="http://www.kaotisk-hund.tk/">kaotisk-hund</a> !</p>
 			</div>
 		</div>
-
 
 		
 
