@@ -1,0 +1,123 @@
+body {
+	background-color: rgb(138,138,138);
+	padding: 0;
+	width: auto;
+	color: #051c20;
+	/* color: #0e414a; */
+}
+div {
+	padding: 5px;
+}
+p.article{
+	text-align: justify;
+}
+.logo {
+	padding: 7px;
+	background-color: #3c9be0;
+	text-align: center;
+	color: #d8d8d8;
+}
+
+img.logo {
+	width: 128px;
+}
+svg {
+	width: 128px;
+		height: 128px;
+		fill: currentColor;
+		vertical-align: bottom;
+}
+svg.logo {
+	color: aqua;
+}
+#path3338 {
+	fill: rgb(5, 133, 149);
+}
+#path4148 {
+	fill: rgb(97, 173, 37);
+}
+#path4150 {
+	fill: rgb(191,98,98);
+}
+.content {
+	padding: 23px;
+	background-color: #d8d8d8;
+}
+.sidebar {
+}
+.warning {
+	background-color: rgba(255,40,40,0.3);
+}
+.code {
+	padding: 10px;
+	color: #c0d2d7;
+	background-color: #353535;
+}
+.info {
+}
+.todo {
+	background-color: #f3f3f3;
+	border-radius: 5px;
+
+}
+.done {
+	text-decoration: line-through;
+}
+a.featured {
+	background-color: #3999f8;
+	padding: 20px;
+	color: white;
+	font-size: 150%;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 5px;
+}
+i.fi-download {
+	font-size: 210%;
+	vertical-align: middle;
+	border-radius: 700px;
+	border-width: 3px;
+	border-style: solid;
+	border-color: #00d46e;
+	padding: 20px;
+	padding-right: 30px;
+	padding-left: 30px;
+	width: 15px;
+	background-color: #02ad5b;
+}
+i.fi-bitcoin-circle {
+	vertical-align: middle;
+	color: #FF8940;
+	font-size: 64px;
+}
+.panel {
+	padding: 10px;
+	border-radius: 5px;
+}
+.success2 {
+	background-color: #00bb62;
+	color: white;
+}
+
+a.donate {
+	text-align: center;
+}
+.footer {
+	padding: 17px;
+}
+.blockchain-logo {
+	width: 48px;
+}
+.donate {
+	text-align: left;
+}
+.footer {
+	background-color: rgb(44, 43, 43);
+	color: rgb(192, 210, 215);
+	padding: 0;
+}
+p.footer {
+	margin-bottom: 0;
+	font-size: 70%;
+	text-align: right;
+}
