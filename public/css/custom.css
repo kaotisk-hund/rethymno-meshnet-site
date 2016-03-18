@@ -137,3 +137,11 @@ p.footer {
 	background-color: rgba(255, 137, 64, 0.72);
 	text-align: center;
 }
+
+.bot-area{
+	background-color: #303030;
+	color: #c0d2d7;
+}
+.bot-list{
+	list-style: none;
+}
