@@ -90,12 +90,15 @@ Here you can download cjdns for Windows.';
 		<img class="blockchain-logo" src="img/blockchain-b-logo.png"/>
 		Τα έσοδά μας μέχρι στιγμής</a>';
 
-	$after["en"] = '<p>Now, that you \'ve downloaded and installed cjdns, you can add our node in the configure file of cjdns.
+	$after["en"] = 'Now, that you \'ve downloaded and installed cjdns, you can add our node in the configure file of cjdns.
 	Information needed is at the bottom of the page. If everything went well, you should be able to reach our site through meshnet.
-	Try this <a href="http://h.rethymno-meshnet.tk/">link</a>.</p>';
-	$after["gr"] = '<p>Τώρα που το κατεβάσατε και το εγκαταστήσατε μπορείτε να προσθέσετε τον κόμβο μας στο αρχείο ρυθμίσεων του cjdns.
+	Try this <a href="http://h.rethymno-meshnet.tk/">link</a>.';
+	$after["gr"] = 'Τώρα που το κατεβάσατε και το εγκαταστήσατε μπορείτε να προσθέσετε τον κόμβο μας στο αρχείο ρυθμίσεων του cjdns.
 	Τα στοιχεία βρίσκονται στο κάτω μέρος της σελίδας. Αν όλα έχουν πάει όπως πρέπει μπορείτε πλέον να συνδεθείτε στο site μέσω meshnet.
-	Δοκιμάστε αυτό το <a href="http://h.rethymno-meshnet.tk/">link</a>.</p>';
+	Δοκιμάστε αυτό το <a href="http://h.rethymno-meshnet.tk/">link</a>.';
+
+	$further["en"] = '<i class="fi-info"></i> Connect to <i>irc.fc00.io</i> and join <b>#rethymno-meshnet</b> channel.';
+	$further["gr"] = '<i class="fi-info"></i> Συνδεθείτε στο <i>irc.fc00.io</i> και μπείτε στο κανάλι <b>#rethymno-meshnet</b> .';
 
 
 	$info_title["en"] = 'Your information';
@@ -149,7 +152,8 @@ Here you can download cjdns for Windows.';
 					<?php echo $download[$lang]; ?>
 				</div>
 				
-				<div><?php echo $after[$lang]; ?></div>
+				<div><p class="article"><?php echo $after[$lang]; ?></p></div>
+				<div><p class="panel info-panel"><?php echo $further[$lang]; ?></p></div>
 			</div>
 			<div class="small-4 columns">
 				<div class=" panel success2">
