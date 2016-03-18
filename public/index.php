@@ -189,6 +189,24 @@ Here you can download cjdns for Windows.';
 				<p><?php echo $address_watch[$lang]; ?></p>
 			</div>
 		</div>
+		<div class="row bot-area">
+			<div class="small-4 columns">
+				<h4><i class="fi-social-github"></i> Sources</h4>
+				<ul class="bot-list">
+					<li>
+						<a href="https://github.com/kaotisk-hund/rethymno-meshnet-site">rethymno-meshnet-site</a>
+					</li>
+					<li>
+						<a href="https://github.com/cjdelisle/cjdns">cjdns</a>
+					</li>
+					<li>
+						<a href="https://github.com/interfect/cjdns-installer">cjdns-installer</a>
+					</li>
+				</ul>
+			</div>
+			<div class="small-4 columns"></div>
+			<div class="small-4 columns"></div>
+		</div>
 		<div class="row footer">
 			<div class="small-4 columns"></div>
 			<div class="small-4 columns"></div>
