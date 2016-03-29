@@ -107,6 +107,9 @@ Here you can download cjdns for Windows.';
 	$connect_title["en"] = "Connect to rethymno-meshnet node";
 	$connect_title["gr"] = "Συνδεθείτε με τον κόμβο rethymno-meshnet";
 
+	$new_version["en"] = '<p class="new-download">New version availiable. Please update.</p>';
+	$new_version["gr"] = '<p class="new-download">Διατίθεται νέα έκδοση. Παρακαλούμε, αναβαθμίστε.</p>';
+
 	function routeFind(){
 		if ($_SERVER["HTTP_HOST"] == "h.rethymno-meshnet.tk"){
 			$route = '<p class="panel success2">on hyperboria</p>';
@@ -148,7 +151,7 @@ Here you can download cjdns for Windows.';
 			<div class="small-8 columns">
 				<p class="article"><?php echo $about[$lang]; ?></p>
 				<div>
-				
+					<?php echo $new_version[$lang]; ?>
 					<?php echo $download[$lang]; ?>
 				</div>
 				

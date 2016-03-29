@@ -145,3 +145,12 @@ p.footer {
 .bot-list{
 	list-style: none;
 }
+
+.new-download{
+	float: right;
+	text-align: center;
+	border-radius: 3px;
+	background-color: rgba(220,220,0,0.8);
+	color: rgb(15,15,15);
+	padding: 5px;
+}
