@@ -7,6 +7,7 @@ class Node {
 	private $password = 'wgs9k7n7j5yh0kx7kyl5m7cpp71ls4y';
 	private $login = 'default-login';
 	private $peer_name = 'gr-rethymno-meshnet';
+	private $contact = 'kaotisk@irc.fc00.io';
 
 	function connect(){
 		$out =
@@ -15,8 +16,8 @@ class Node {
 \t\"password\":\"".$this->password."\",
 \t\"publicKey\":\"".$this->public_key."\",
 \t\"peerName\":\"".$this->peer_name."\",
-\t\"contact\":\"kaotisk@irc.fc00.io\"
-	}";
+\t\"contact\":\"".$this->contact."\"
+}";
 		return $out;
 	}
 }
