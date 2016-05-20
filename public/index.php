@@ -28,24 +28,43 @@
 <!doctype html>
 <html class="no-js" lang="<?php echo $lang; ?>">
  	<head>
-	    <meta charset="utf-8" />
-	    <meta http-equiv="x-ua-compatible" content="ie=edge">
-	    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	    <title>Rethymno MeshNet</title>
-	    <link rel="shortcut icon" href="img/meshnet_logo72-2.png" />
-	    <link rel="stylesheet" href="foundation-icons/foundation-icons.css" />
+		<meta charset="utf-8" />
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Rethymno MeshNet</title>
+		<link rel="shortcut icon" href="img/meshnet_logo72-2.png" />
+		<link rel="stylesheet" href="foundation-icons/foundation-icons.css" />
 
-	    <link rel="stylesheet" href="css/foundation.css" />
-	    <link rel="stylesheet" href="css/app.css" />
-	    <link rel="stylesheet" type="text/css" href="css/custom.css" />
+		<link rel="stylesheet" href="css/foundation.css" />
+		<link rel="stylesheet" href="css/app.css" />
+		<link rel="stylesheet" type="text/css" href="css/custom.css" />
 	</head>
 	<body>
-		<div class="lang-menu">
-			<form method="post">
-			<input class="lang-button button" type="submit" name="language" value="en">
-			<input class="lang-button button" type="submit" name="language" value="gr">
-			</form>
+		<div class="row top-bar-menu">
+			<div class="small-12 column">
+				<div class="top-bar">
+					<div class="top-bar-left">
+						<ul class="dropdown menu" data-dropdown-menu>
+							<li class="menu-text">Rethymno Meshnet</li>
+							<li><a href=""><?php echo $info_title[$lang]; ?></a>
+								<ul class="menu vertical">
+									<li><p class="panel"><?php	echo $remote_address[$lang]; ?></p></li>
+								</ul>
+							</li>
+							<li><p><?php echo routeFind(); ?></p></li>
+						</ul>
+					</div>
+					<div class="top-bar-right">
+						<ul class="menu"><form method="post">
+							<li><input class="lang-button button" type="submit" name="language" value="en"></li>
+							<li><input class="lang-button button" type="submit" name="language" value="gr"></li>
+							</form>
+						</ul>
+					</div>
+				</div>
+			</div>
 		</div>
+		
 		<div class="row logo">
 			<div class="small-12 column">
 				<img src="img/meshnetlogo-2.svg" height="12.5%" width="12.5%">
@@ -70,23 +89,7 @@
 				<div><?php echo $further[$lang]; ?></div>
 			</div>
 		</div>
-		<div class="row">
-			<div class="small-12 columns">
-				<div>
-					<h3><?php echo $info_title[$lang]; ?></h3>
-					<p>
-					<?php
-						echo $remote_address[$lang];
-						?></p>
-						<p><?php 
-						echo routeFind();
-					?></p>
-					
-				</div>
-			</div>
-		</div>
-		
-		
+				
 		<div class="row code">
 			<div class="small-9 columns">
 				<div class="code">
@@ -143,9 +146,9 @@
 
 
 	<script src="js/vendor/jquery.min.js"></script>
-    <script src="js/vendor/what-input.min.js"></script>
-    <script src="js/foundation.min.js"></script>
-    <script src="js/app.js"></script>
+	<script src="js/vendor/what-input.min.js"></script>
+	<script src="js/foundation.min.js"></script>
+	<script src="js/app.js"></script>
 	</body>
 </html>
 

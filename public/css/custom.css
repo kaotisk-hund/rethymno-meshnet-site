@@ -12,7 +12,7 @@ p.article{
 	text-align: justify;
 }
 .logo {
-	padding: 7px;
+	padding: 17px;
 	background-color: #3c9be0;
 	text-align: center;
 	color: #d8d8d8;
@@ -30,21 +30,12 @@ svg {
 svg.logo {
 	color: aqua;
 }
-#path3338 {
-	fill: rgb(5, 133, 149);
-}
-#path4148 {
-	fill: rgb(97, 173, 37);
-}
-#path4150 {
-	fill: rgb(191,98,98);
-}
+
 .content {
 	padding: 23px;
 	background-color: #d8d8d8;
 }
-.sidebar {
-}
+
 .warning {
 	background-color: rgba(255,40,40,0.3);
 }
@@ -148,4 +139,21 @@ p.footer {
 }
 .bot-list{
 	list-style: none;
+}
+
+.top-bar{
+	background-color: #5D6468;
+	margin: 0;
+	padding: 0;
+}
+
+.top-bar ul {
+	background-color: #5D6468;
+	margin: 0;
+	padding: 0;
+}
+
+.top-bar-menu {
+		background-color: #5D6468;
+
 }
