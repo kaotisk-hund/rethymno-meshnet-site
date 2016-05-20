@@ -91,10 +91,5 @@ give it a try! Here you can download cjdns for Windows.';
 	$connect_title["en"] = "Connect to rethymno-meshnet node";
 	$connect_title["gr"] = "Συνδεθείτε με τον κόμβο rethymno-meshnet";
 
-	$new_version["en"] = '<p class="new-download"><i class="fi-alert"></i> New version availiable. Please update.</p>';
-	$new_version["gr"] = '<p class="new-download"><i class="fi-alert"></i> Διατίθεται νέα έκδοση. Παρακαλούμε, αναβαθμίστε.</p>';
-
-	
-
 	$local_dl_text["en"] = "Download cjdns";
 	$local_dl_text["gr"] = "Κατέβασε το cjdns";

@@ -72,7 +72,6 @@
 			<div class="small-8 columns">
 				<p class="article"><?php echo $about[$lang]; ?></p>
 				<div>
-					<?php echo $new_version[$lang]; ?>
 					<?php echo $download[$lang]; ?>
 				</div>
 				
