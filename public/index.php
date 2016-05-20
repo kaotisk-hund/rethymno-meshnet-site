@@ -60,19 +60,18 @@
 			</div>
 		</div>
 		<div class="row content">
-			<div class="small-8 columns">
+			<div class="small-12 columns">
 				<p class="article"><?php echo $about[$lang]; ?></p>
-				<div>
+				<div class="download">
 					<?php echo $download[$lang]; ?>
 				</div>
 				
 				<div><p class="article"><?php echo $after[$lang]; ?></p></div>
 				<div><?php echo $further[$lang]; ?></div>
 			</div>
-			<div class="small-4 columns">
-				<div class=" panel success2">
-					<?php echo $warnings[$lang]; ?>
-				</div>
+		</div>
+		<div class="row">
+			<div class="small-12 columns">
 				<div>
 					<h3><?php echo $info_title[$lang]; ?></h3>
 					<p>
