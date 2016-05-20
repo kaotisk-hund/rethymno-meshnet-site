@@ -2,6 +2,7 @@
 	include '../app/Node.php';
 	include '../app/Language.php';
 	include '../app/Session.php';
+	include '../app/TunStats.php';
 
 	$session = new Session();
 	
@@ -12,7 +13,7 @@
 	$node = new Node();
 	$public_node = $node->connect();
 
-
+	$stats = new TunStats();
 	
 	/*if(isset($_GET['lang']) && )){
 		$lang = $_GET['lang'];
@@ -21,112 +22,7 @@
 		$lang = $default_lang;
 	}*/
 	
-	$site_title = "Rethymno Mesh Network";
-
-	$cjdns_installer_latest_release = "https://github.com/interfect/cjdns-installer/releases/latest";
-	$local_download_link = "files/cjdns-installer-0.7-proto17.exe";
-	
-	$title["gr"] = "Καλώς ήρθατε στο ". $site_title;
-	$title["en"] = "Welcome to ". $site_title;
-	
-	$about["en"] = 'Hi! This is the front page for Rethymno MeshNet. At this particular space you can learn how to be a part of the network!
-For start, we use cjdns for connecting to each other. This is how our computers communicate. If you feel like connecting with us
-give it a try! Or two! If you have not installed OpenVPN yet, please do so or cjdns won\'t work. Choose from the official page the installation media for your platform.
-<a href="https://openvpn.net/index.php/open-source/downloads.html">Download OpenVPN</a>.
-So after downloading and install OpenVPN software we can proceed to the next step!
-Here you can download cjdns for Windows.';
-	$about["gr"] = 'Γεια χαρά! Βρίσκεστε στη σελίδα του Rethymno MeshNet. Εδώ μπορείτε να μάθετε τι χρειάζεται να κάνετε για να συνδεθείτε στο δίκτυο!
-Αρχικά, χρησιμοποιούμε το cjdns για να συνδεθούμε μεταξύ μας. Έτσι, επικοινωνούν οι συσκεύες μας. Αν επιθυμείτε να συνδεθείτε μαζί μας, κάν\'τε
-μια προσπάθεια ή και δύο. Εαν δεν έχετε εγκαταστήσεί το OpenVPN ακόμα, παρακαλούμε κάν\'τε το αλλιώς το cjdns δεν θα δουλέψει. Διαλέξτε από την 
-επίσημη σελίδα το αρχείο εγκατάστασης ανάλογα το λειτουργικό σας σύστημα.
-<a href="https://openvpn.net/index.php/open-source/downloads.html">Κατεβάστε το OpenVPN</a>.
-Εφόσον κατεβάσατε και εγκαταστήσατε το OpenVPN μπορούμε να προχωρήσουμε στο επόμενο βήμα!
-Εδώ μπορείτε να κατεβάσατε το cjdns για Windows.';
-	
-	$warnings["en"] = '<pre style="text-align: center;">everything is ok</pre>';
-	$warnings["gr"] = '<pre style="text-align: center;">Όλα ok</pre>';
-
-	$some_notes["en"] = 'The thing is to make a free network for all people.';
-	$some_notes["gr"] = 'Το θέμα είναι να φτιαχτεί ένα δωρεάν δίκτυο για όλο τον κόσμο.';
-	
-	$location["en"] = 'Rethymno, Greece';
-	$location["gr"] = 'Ρέθυμνο, Ελλάδα';
-
-	$remote_address["en"] =  "you are accessing this site through: " .$_SERVER["REMOTE_ADDR"];
-	$remote_address["gr"] =  "Πρόσβαση στο site από: " .$_SERVER["REMOTE_ADDR"];
-
-
-	$todo["en"] = "
-	<h4><i class=\"fi-clipboard-notes\"></i> ToDo</h5>
-	<ul>
-		<li class=\"done\">Site up</li>
-		<li class=\"done\">Publish peer info</li>
-		<li class=\"done\">Upload compiled cjdns</li>
-		<li>Upload scripts</li>
-		<li class=\"done\">OpenVpn link for depedencies (Windows)</li>
-		<li class=\"done\">Add greek language to the site</li>
-	</ul>";
-	$todo["gr"] = "
-	<h4><i class=\"fi-clipboard-notes\"></i> ToDo</h5>
-	<ul>
-		<li class=\"done\">Site up</li>
-		<li class=\"done\">Publish peer info</li>
-		<li class=\"done\">Upload compiled cjdns</li>
-		<li class=\"done\">Upload scripts [Not needed]</li>
-		<li class=\"done\">OpenVpn link for depedencies (Windows)</li>
-		<li class=\"done\">Add greek language to the site</li>
-		<li class=\"done\">Removed old link and redirected to interfect's cjdns-installer</li>
-	</ul>";
-		
-	$download["en"] = '<a class="featured button" target="_new" href="'.$local_download_link.'"><i class="fi-download"></i> Download cjdns-installer now!</a>';
-	$download["gr"] = '<a class="featured button" target="_new" href="'.$local_download_link.'"><i class="fi-download"></i> Κατεβάστε το cjdns-installer!</a>';
-
-	$donate["en"] = '<a class="donate" href="bitcoin:1zzSnCvLRLw4ft8KbmH6rawLyZgFVDBrv?label=Rethymno%20Meshnet">
-		<i class="fi-bitcoin-circle"></i> Donate for this project</a>';
-	$donate["gr"] = '<a class="donate" href="bitcoin:1zzSnCvLRLw4ft8KbmH6rawLyZgFVDBrv?label=Rethymno%20Meshnet">
-		<i class="fi-bitcoin-circle"></i> Δώστε κάτι για το project...</a>';
-
-	$address_watch["en"] = '<a class="donate" href="https://blockchain.info/address/1zzSnCvLRLw4ft8KbmH6rawLyZgFVDBrv">
-		<img class="blockchain-logo" src="img/blockchain-b-logo.png"/>
-		Donations so far</a>';
-	$address_watch["gr"] = '<a class="donate" href="https://blockchain.info/address/1zzSnCvLRLw4ft8KbmH6rawLyZgFVDBrv">
-		<img class="blockchain-logo" src="img/blockchain-b-logo.png"/>
-		Τα έσοδά μας μέχρι στιγμής</a>';
-
-	$after["en"] = 'Now, that you \'ve downloaded and installed cjdns, you can add our node in the configure file of cjdns.
-	Information needed is at the bottom of the page. If everything went well, you should be able to reach our site through meshnet.
-	Try this <a href="http://h.rethymno-meshnet.tk/">link</a>.';
-	$after["gr"] = 'Τώρα που το κατεβάσατε και το εγκαταστήσατε μπορείτε να προσθέσετε τον κόμβο μας στο αρχείο ρυθμίσεων του cjdns.
-	Τα στοιχεία βρίσκονται στο κάτω μέρος της σελίδας. Αν όλα έχουν πάει όπως πρέπει μπορείτε πλέον να συνδεθείτε στο site μέσω meshnet.
-	Δοκιμάστε αυτό το <a href="http://h.rethymno-meshnet.tk/">link</a>.';
-
-	$further["en"] = '<h3><i class="fi-info"></i> What to do next?</h3>
-	<ul>
-		<li>Connect to <i>irc.fc00.io</i> and join <b>#rethymno-meshnet</b> channel.</li>
-		<li>Find you self in the <a href="http://h.fc00.org">hyperboria map</a>!</li>
-		<li>Download a <a href="https://tox.chat/download.html">Tox Chat client</a> and connect with your friends! </li>
-	</ul>';
-	$further["gr"] = '<h3><i class="fi-info"></i> Τι να κάνω μετά;</h3>
-	<ul>
-		<li>Συνδεθείτε στο <i>irc.fc00.io</i> και μπείτε στο κανάλι <b>#rethymno-meshnet</b> .</li>
-		<li>Βρες που βρίσκεσαι στον <a href="http://h.fc00.org">χάρτη του hyperboria</a>!</li>
-		<li>Κατέβασε το <a href="https://tox.chat/download.html">Tox Chat</a> και συνδέσου με τους φίλους σου!</li>
-	</ul>';
-
-
-	$info_title["en"] = 'Your information';
-	$info_title["gr"] = 'Οι πληροφορίες σου';
-
-	$connect_title["en"] = "Connect to rethymno-meshnet node";
-	$connect_title["gr"] = "Συνδεθείτε με τον κόμβο rethymno-meshnet";
-
-	$new_version["en"] = '<p class="new-download"><i class="fi-alert"></i> New version availiable. Please update.</p>';
-	$new_version["gr"] = '<p class="new-download"><i class="fi-alert"></i> Διατίθεται νέα έκδοση. Παρακαλούμε, αναβαθμίστε.</p>';
-
-	
-
-	$local_dl_text["en"] = "Download cjdns";
-	$local_dl_text["gr"] = "Κατέβασε το cjdns";
+	include '../app/GeneralText.php';
 
 	function routeFind(){
 		if ($_SERVER["HTTP_HOST"] == "h.rethymno-meshnet.tk"){
@@ -165,6 +61,13 @@ Here you can download cjdns for Windows.';
 				<h1><?php echo $title[$lang]; ?></h1>
 			</div>
 		</div>
+		<div class="hide row">
+			<div class="small-12 column">
+				<p>
+					<?php echo $stats->getStats(); ?>
+				</p>
+			</div>
+		</div>
 		<div class="row content">
 			<div class="small-8 columns">
 				<p class="article"><?php echo $about[$lang]; ?></p>
@@ -189,6 +92,7 @@ Here you can download cjdns for Windows.';
 						<p><?php 
 						echo routeFind();
 					?></p>
+					
 				</div>
 				<div class="todo">
 					<?php echo $todo[$lang]; ?>
@@ -232,7 +136,14 @@ Here you can download cjdns for Windows.';
 					</li>
 				</ul>
 			</div>
-			<div class="small-4 columns"></div>
+			<div class="small-3 columns">
+				<h4><i class="fi-mail"></i> Support</h4>
+				<ul class="bot-list">
+					<li><a href="https://toxme.io/u/kaotisk-hund">Find me on tox</a></li>
+				</ul>
+			</div>
+			<div class="small-3 columns">
+			</div>
 		</div>
 		<div class="row footer">
 			<div class="small-4 columns"></div>
