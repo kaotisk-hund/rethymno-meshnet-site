@@ -73,9 +73,6 @@ i.fi-download {
     font-size: 210%;
     vertical-align: middle;
     border-radius: 90px;
-/*    border-width: 3px;
-    border-style: solid;
-    border-color: #00d46e;*/
     padding-top: 15px;
     height: 90px;
     width: 90px;
@@ -90,6 +87,11 @@ i.fi-bitcoin-circle {
 	vertical-align: middle;
 	color: #FF8940;
 	font-size: 64px;
+}
+
+.download {
+	padding: 23px;
+	text-align: center;
 }
 
 .panel {
