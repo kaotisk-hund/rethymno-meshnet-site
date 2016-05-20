@@ -26,10 +26,10 @@
 
 	function routeFind(){
 		if ($_SERVER["HTTP_HOST"] == "h.rethymno-meshnet.tk"){
-			$route = '<p class="panel success2">on hyperboria</p>';
+			$route = '<p class="panel">on hyperboria <i class="fi-check success2"></i></p>';
 		}
 		else {
-			$route = '<p class="panel warning">on internet</p>';
+			$route = '<p class="panel">on internet</p>';
 		}
 		return $route;
 	}
