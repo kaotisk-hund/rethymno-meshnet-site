@@ -93,9 +93,6 @@
 					?></p>
 					
 				</div>
-				<!-- <div class="todo">
-					<?php echo $todo[$lang]; ?>
-				</div> -->
 			</div>
 		</div>
 		

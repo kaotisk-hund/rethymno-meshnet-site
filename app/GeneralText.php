@@ -25,29 +25,6 @@ give it a try! Here you can download cjdns for Windows.';
 
 	$remote_address["en"] =  "you are accessing this site through: " .$_SERVER["REMOTE_ADDR"];
 	$remote_address["gr"] =  "Πρόσβαση στο site από: " .$_SERVER["REMOTE_ADDR"];
-
-
-	$todo["en"] = "
-	<h4><i class=\"fi-clipboard-notes\"></i> ToDo</h5>
-	<ul>
-		<li class=\"done\">Site up</li>
-		<li class=\"done\">Publish peer info</li>
-		<li class=\"done\">Upload compiled cjdns</li>
-		<li>Upload scripts</li>
-		<li class=\"done\">OpenVpn link for depedencies (Windows)</li>
-		<li class=\"done\">Add greek language to the site</li>
-	</ul>";
-	$todo["gr"] = "
-	<h4><i class=\"fi-clipboard-notes\"></i> ToDo</h5>
-	<ul>
-		<li class=\"done\">Site up</li>
-		<li class=\"done\">Publish peer info</li>
-		<li class=\"done\">Upload compiled cjdns</li>
-		<li class=\"done\">Upload scripts [Not needed]</li>
-		<li class=\"done\">OpenVpn link for depedencies (Windows)</li>
-		<li class=\"done\">Add greek language to the site</li>
-		<li class=\"done\">Removed old link and redirected to interfect's cjdns-installer</li>
-	</ul>";
 		
 	$download["en"] = '<a class="featured button" target="_new" href="'.$local_download_link.'"><i class="fi-download"></i> Download cjdns-installer now!</a>';
 	$download["gr"] = '<a class="featured button" target="_new" href="'.$local_download_link.'"><i class="fi-download"></i> Κατεβάστε το cjdns-installer!</a>';

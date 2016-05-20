@@ -56,16 +56,6 @@ svg.logo {
 .info {
 }
 
-.todo {
-	background-color: #f3f3f3;
-	border-radius: 5px;
-
-}
-
-.done {
-	text-decoration: line-through;
-}
-
 a.featured {
 	background-color: #3999f8;
 	padding: 20px;
