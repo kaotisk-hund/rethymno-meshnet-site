@@ -9,17 +9,10 @@
 	
 	$about["en"] = 'Hi! This is the front page for Rethymno MeshNet. At this particular space you can learn how to be a part of the network!
 For start, we use cjdns for connecting to each other. This is how our computers communicate. If you feel like connecting with us
-give it a try! Or two! If you have not installed OpenVPN yet, please do so or cjdns won\'t work. Choose from the official page the installation media for your platform.
-<a href="https://openvpn.net/index.php/open-source/downloads.html">Download OpenVPN</a>.
-So after downloading and install OpenVPN software we can proceed to the next step!
-Here you can download cjdns for Windows.';
+give it a try! Here you can download cjdns for Windows.';
 	$about["gr"] = 'Γεια χαρά! Βρίσκεστε στη σελίδα του Rethymno MeshNet. Εδώ μπορείτε να μάθετε τι χρειάζεται να κάνετε για να συνδεθείτε στο δίκτυο!
 Αρχικά, χρησιμοποιούμε το cjdns για να συνδεθούμε μεταξύ μας. Έτσι, επικοινωνούν οι συσκεύες μας. Αν επιθυμείτε να συνδεθείτε μαζί μας, κάν\'τε
-μια προσπάθεια ή και δύο. Εαν δεν έχετε εγκαταστήσεί το OpenVPN ακόμα, παρακαλούμε κάν\'τε το αλλιώς το cjdns δεν θα δουλέψει. Διαλέξτε από την 
-επίσημη σελίδα το αρχείο εγκατάστασης ανάλογα το λειτουργικό σας σύστημα.
-<a href="https://openvpn.net/index.php/open-source/downloads.html">Κατεβάστε το OpenVPN</a>.
-Εφόσον κατεβάσατε και εγκαταστήσατε το OpenVPN μπορούμε να προχωρήσουμε στο επόμενο βήμα!
-Εδώ μπορείτε να κατεβάσατε το cjdns για Windows.';
+μια προσπάθεια! Εδώ μπορείτε να κατεβάσατε το cjdns για Windows.';
 	
 	$warnings["en"] = '<pre style="text-align: center;">everything is ok</pre>';
 	$warnings["gr"] = '<pre style="text-align: center;">Όλα ok</pre>';
