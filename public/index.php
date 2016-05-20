@@ -23,16 +23,7 @@
 	}*/
 	
 	include '../app/GeneralText.php';
-
-	function routeFind(){
-		if ($_SERVER["HTTP_HOST"] == "h.rethymno-meshnet.tk"){
-			$route = '<p class="panel">on hyperboria <i class="fi-check success2"></i></p>';
-		}
-		else {
-			$route = '<p class="panel">on internet</p>';
-		}
-		return $route;
-	}
+	include '../app/Functions.php';
 ?>
 <!doctype html>
 <html class="no-js" lang="<?php echo $lang; ?>">
