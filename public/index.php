@@ -67,8 +67,16 @@
 		
 		<div class="row logo">
 			<div class="small-12 column">
-				<img src="img/meshnetlogo-2.svg" height="12.5%" width="12.5%">
-				<h1><?php echo $title[$lang]; ?></h1>
+				<div class="row">
+					<div class="small-12 column">
+						<img class="logo" src="img/meshnetlogo-2.svg" height="12.5%" width="12.5%">
+					</div>
+				</div>
+				<div class="row">
+					<div class="small-12 column">
+						<h1><?php echo $title[$lang]; ?></h1>
+					</div>
+				</div>
 			</div>
 		</div>
 		<div class="hide row">
@@ -141,14 +149,10 @@
 				<p class="footer">Proudly brought to you by <a href="http://www.kaotisk-hund.tk/">kaotisk-hund</a> !</p>
 			</div>
 		</div>
-
-		
-
-
-	<script src="js/vendor/jquery.min.js"></script>
-	<script src="js/vendor/what-input.min.js"></script>
-	<script src="js/foundation.min.js"></script>
-	<script src="js/app.js"></script>
+		<script src="js/vendor/jquery.min.js"></script>
+		<script src="js/vendor/what-input.min.js"></script>
+		<script src="js/foundation.min.js"></script>
+		<script src="js/app.js"></script>
 	</body>
 </html>
 
