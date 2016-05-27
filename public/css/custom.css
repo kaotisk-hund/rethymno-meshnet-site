@@ -5,6 +5,9 @@ body {
 	color: #051c20;
 	/* color: #0e414a; */
 }
+.row {
+	max-width: 100%;
+}
 div {
 	padding: 5px;
 }
@@ -19,7 +22,9 @@ p.article{
 }
 
 img.logo {
-	width: 128px;
+	/* width: 128px; */
+	padding-top: 10px;
+
 }
 svg {
 	width: 128px;
