@@ -69,7 +69,7 @@
 			<div class="small-12 column">
 				<div class="row">
 					<div class="small-12 column">
-						<img class="logo" src="img/meshnetlogo-2.svg" height="12.5%" width="12.5%">
+						<img class="logo" src="img/meshnet_logo72-wh.png" height="12.5%" width="12.5%">
 					</div>
 				</div>
 				<div class="row">
