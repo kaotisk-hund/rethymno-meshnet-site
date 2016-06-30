@@ -11,5 +11,6 @@
 	}
 	
 	function cjdnsVersion(){
-		echo shell_exec('cjdroute -v');
+		$i = shell_exec('cjdroute -v');
+		return $i;
 	}
