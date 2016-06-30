@@ -9,3 +9,7 @@
 		}
 		return $route;
 	}
+	
+	function cjdnsVersion(){
+		echo shell_exec('cjdroute -v');
+	}
