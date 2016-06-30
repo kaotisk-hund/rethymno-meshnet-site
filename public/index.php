@@ -140,6 +140,7 @@
 				</ul>
 			</div>
 			<div class="small-3 columns">
+				<pre><?php cjdnsVersion(); ?></pre>
 			</div>
 		</div>
 		<div class="row footer">
