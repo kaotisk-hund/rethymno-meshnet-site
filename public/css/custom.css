@@ -44,11 +44,7 @@ svg.logo {
 .warning {
 	background-color: rgba(255,40,40,0.3);
 }
-.code {
-	padding: 10px;
-	color: #c0d2d7;
-	background-color: #353535;
-}
+
 .info {
 }
 
@@ -109,7 +105,10 @@ a.donate {
 	width: 48px;
 }
 .donate {
-	text-align: left;
+	text-align: center;
+	padding: 10px;
+	color: #c0d2d7;
+	background-color: #353535;
 }
 .footer {
 	background-color: rgb(44, 43, 43);
