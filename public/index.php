@@ -98,16 +98,11 @@
 			</div>
 		</div>
 				
-		<div class="row code">
-			<div class="small-9 columns">
-				<div class="code">
-					<h2><?php echo $connect_title[$lang]; ?></h2>
-					<pre><?php echo $public_node; ?></pre>
-				</div>
-			</div>
-			<div class="small-3 columns donate">
-			
+		<div class="row donate">
+			<div class="small-6 columns">
 				<p><?php echo $donate[$lang]; ?></p>
+			</div>
+			<div class="small-6 columns">
 				<p><?php echo $address_watch[$lang]; ?></p>
 			</div>
 		</div>
@@ -132,19 +127,20 @@
 					<li><a href="<?php echo $local_download_link; ?>"><?php echo $local_dl_text[$lang]; ?></a>
 					</li>
 				</ul>
-			</div>
-			<div class="small-3 columns">
 				<h4><i class="fi-mail"></i> Support</h4>
 				<ul class="bot-list">
 					<li><a href="https://toxme.io/u/kaotisk-hund">Find me on tox</a></li>
 				</ul>
 			</div>
-			<div class="small-3 columns">
-				<pre><?php echo cjdnsVersion(); ?></pre>
+			<div class="small-6 columns">
+				<h4><i class="fi-list"></i> Statistics</h4>
+				<pre class="code"><?php include '../app/cjdns/peerStats.php'; ?></pre>
 			</div>
 		</div>
 		<div class="row footer">
-			<div class="small-4 columns"></div>
+			<div class="small-4 columns">
+				<p class="footer">Active branch: <?php echo siteVersion(); ?></p>
+			</div>
 			<div class="small-4 columns"></div>
 			<div class="small-4 columns">
 				<p class="footer">Proudly brought to you by <a href="http://www.kaotisk-hund.tk/">kaotisk-hund</a> !</p>
