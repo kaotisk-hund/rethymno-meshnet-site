@@ -29,9 +29,9 @@ give it a try! Here you can download cjdns for Windows.';
 	$download["en"] = '<a class="featured button" target="_new" href="'.$local_download_link.'"><i class="fi-download"></i> Download cjdns-installer now!</a>';
 	$download["gr"] = '<a class="featured button" target="_new" href="'.$local_download_link.'"><i class="fi-download"></i> Κατεβάστε το cjdns-installer!</a>';
 
-	$donate["en"] = '<a class="donate" href="bitcoin:1zzSnCvLRLw4ft8KbmH6rawLyZgFVDBrv?label=Rethymno%20Meshnet">
+	$donate["en"] = '<a class=" donate" href="bitcoin:1zzSnCvLRLw4ft8KbmH6rawLyZgFVDBrv?label=Rethymno%20Meshnet">
 		<i class="fi-bitcoin-circle"></i> Donate for this project</a>';
-	$donate["gr"] = '<a class="donate" href="bitcoin:1zzSnCvLRLw4ft8KbmH6rawLyZgFVDBrv?label=Rethymno%20Meshnet">
+	$donate["gr"] = '<a class=" donate" href="bitcoin:1zzSnCvLRLw4ft8KbmH6rawLyZgFVDBrv?label=Rethymno%20Meshnet">
 		<i class="fi-bitcoin-circle"></i> Δώστε κάτι για το project...</a>';
 
 	$address_watch["en"] = '<a class="donate" href="https://blockchain.info/address/1zzSnCvLRLw4ft8KbmH6rawLyZgFVDBrv">
