@@ -102,15 +102,15 @@
 		</div>
 				
 		<div class="row donate">
-			<div class="small-6 columns">
+			<div class="medium-6 small-12 columns">
 				<p><?php echo $donate[$lang]; ?></p>
 			</div>
-			<div class="small-6 columns">
+			<div class="medium-6 small-12 columns">
 				<p><?php echo $address_watch[$lang]; ?></p>
 			</div>
 		</div>
 		<div class="row bot-area">
-			<div class="small-3 columns">
+			<div class="medium-3 small-6 columns">
 				<h4><i class="fi-social-github"></i> Sources</h4>
 				<ul class="bot-list">
 					<li>
@@ -124,7 +124,7 @@
 					</li>
 				</ul>
 			</div>
-			<div class="small-3 columns">
+			<div class="medium-3 small-6 columns">
 				<h4><i class="fi-folder"></i> Files</h4>
 				<ul class="bot-list">
 					<li><a href="<?php echo $local_download_link; ?>"><?php echo $local_dl_text[$lang]; ?></a>
@@ -135,7 +135,7 @@
 					<li><a href="https://toxme.io/u/kaotisk-hund">Find me on tox</a></li>
 				</ul>
 			</div>
-			<div class="small-6 columns">
+			<div class="medium-6 small-12 columns">
 				<h4><i class="fi-list"></i> Statistics</h4>
 				<pre class="code"><?php include '../app/cjdns/peerStats.php'; ?></pre>
 			</div>
@@ -260,15 +260,15 @@
 		</div>
 				
 		<div class="row donate">
-			<div class="small-6 columns">
+			<div class="medium-6 small-12 columns">
 				<p><?php echo $donate[$lang]; ?></p>
 			</div>
-			<div class="small-6 columns">
+			<div class="medium-6 small-12 columns">
 				<p><?php echo $address_watch[$lang]; ?></p>
 			</div>
 		</div>
 		<div class="row bot-area">
-			<div class="small-3 columns">
+			<div class="medium-3 small-6 columns">
 				<h4><i class="fi-social-github"></i> Sources</h4>
 				<ul class="bot-list">
 					<li>
@@ -282,7 +282,7 @@
 					</li>
 				</ul>
 			</div>
-			<div class="small-3 columns">
+			<div class="medium-3 small-6 columns">
 				<h4><i class="fi-folder"></i> Files</h4>
 				<ul class="bot-list">
 					<li><a href="<?php echo $local_download_link; ?>"><?php echo $local_dl_text[$lang]; ?></a>
@@ -293,7 +293,7 @@
 					<li><a href="https://toxme.io/u/kaotisk-hund">Find me on tox</a></li>
 				</ul>
 			</div>
-			<div class="small-6 columns">
+			<div class="medium-6 small-12 columns">
 				<h4><i class="fi-list"></i> Statistics</h4>
 				<pre class="code"><?php include '../app/cjdns/peerStats.php'; ?></pre>
 			</div>
