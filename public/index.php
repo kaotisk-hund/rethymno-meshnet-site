@@ -72,7 +72,7 @@
 			<div class="small-12 column">
 				<div class="row">
 					<div class="small-12 column">
-						<img class="logo" src="img/g5125.png" width="75%">
+						<img class="logo" src="img/g5125.png" width="100%">
 					</div>
 				</div>
 				<div class="row">
