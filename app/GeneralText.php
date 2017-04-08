@@ -2,7 +2,7 @@
 	$site_title = "Rethymno Mesh Network";
 
 	$cjdns_installer_latest_release = "https://github.com/interfect/cjdns-installer/releases/latest";
-	$local_download_link = "files/cjdns-installer-0.7-proto17.exe";
+	$local_download_link = "files/cjdns-installer-0.8-proto18.exe";
 	
 	$title["gr"] = "Καλώς ήρθατε στο ". $site_title;
 	$title["en"] = "Welcome to ". $site_title;
