@@ -141,11 +141,10 @@
 			</div>
 		</div>
 		<div class="row footer">
-			<div class="small-4 columns">
+			<div class="small-6 columns">
 				<p class="footer">Active branch: <?php echo siteVersion(); ?></p>
 			</div>
-			<div class="small-4 columns"></div>
-			<div class="small-4 columns">
+			<div class="small-6 columns">
 				<p class="footer">Proudly brought to you by <a href="http://www.kaotisk-hund.tk/">kaotisk-hund</a> !</p>
 			</div>
 		</div>
