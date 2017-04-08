@@ -14,3 +14,8 @@
 		$i = shell_exec('cjdroute -v');
 		return $i;
 	}
+	
+	function siteVersion(){
+		$i = shell_exec('git branch');
+		return $i;
+	}
