@@ -45,7 +45,7 @@
 				<div class="top-bar">
 					<div class="top-bar-left">
 						<ul class="dropdown menu" data-dropdown-menu>
-							<li class="menu-text">Rethymno Meshnet</li>
+							<li class="menu-text"><img width="36px" src="img/meshnet-logo.svg"> Rethymno Meshnet</li>
 							<li><a href=""><?php echo $info_title[$lang]; ?></a>
 								<ul class="menu vertical">
 									<li><p class="panel"><?php	echo $remote_address[$lang]; ?></p></li>
